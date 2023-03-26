@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class SeleniumDemo {
     public static void main(String[] args) {
@@ -24,15 +25,14 @@ public class SeleniumDemo {
         String actualTitle = driver.getTitle();
 
        //nasil kontrol ederiz
-        if (actualTitle.equals(expectedTitle)) {
-            System.out.println("Test Passed");
-        } else {
-            System.out.println("Test fail.The current title is  " +  actualTitle +"  the expected was"+  expectedTitle );
-
-
-        }
-
-
+//        if (actualTitle.equals(expectedTitle)) {
+//            System.out.println("Test Passed");
+//        } else {
+//            System.out.println("Test fail.The current title is  " +  actualTitle +"  the expected was"+  expectedTitle );
+//
+//
+//        }
+        Assert.assertEquals(actualTitle,expectedTitle);
 
 
     }

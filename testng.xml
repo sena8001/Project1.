@@ -1,0 +1,25 @@
+<suite name="Web Orders Tests ">
+
+
+
+    <test name="Hllo">
+
+        <classes>
+            <!-- class names should inc package names if there are any -->
+
+            <class name="day71.Login"/>
+
+        </classes>
+
+
+
+
+
+
+        </test>
+
+
+   </suite>
+
+
+
